@@ -5,7 +5,7 @@ const DB ='mongodb+srv://hemraj:Hemraj%40748244@databasecluster.z5usoe1.mongodb.
 mongoose.connect(DB).then(()=>{console.log('connection success')}).catch((err)=>console.log(err))
 
 app.get('/', function(req, res) {
-  res.send('Is this thing on?');
+  res.send('App is running');
 });
 
 app.listen(3000, function() {

@@ -1,5 +1,8 @@
-var express = require('express');
-var app = express();
+const mongoose = require('mongoose');
+const express = require('express');
+const app=express();
+const DB ='mongodb+srv://hemraj:Hemraj%40748244@databasecluster.z5usoe1.mongodb.net/inotebook?retryWrites=true&w=majority'
+mongoose.connect(DB).then(()=>{console.log('connection success')}).catch((err)=>console.log(err))
 
 app.get('/', function(req, res) {
   res.send('Is this thing on?');

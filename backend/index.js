@@ -7,6 +7,9 @@ app.get('/', function(req, res) {
   res.send('App is running');
 });
 
+
+app.use('/api/auth',)
+
 app.listen(3000, function() {
   console.log('Server listening on port 3000');
 });

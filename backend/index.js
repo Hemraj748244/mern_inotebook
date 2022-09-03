@@ -1,8 +1,7 @@
-const mongoose = require('mongoose');
+const connectToMongo = require('./db');
 const express = require('express');
 const app=express();
-const DB ='mongodb+srv://hemraj:Hemraj%40748244@databasecluster.z5usoe1.mongodb.net/inotebook?retryWrites=true&w=majority'
-mongoose.connect(DB).then(()=>{console.log('connection success')}).catch((err)=>console.log(err))
+connectToMongo();
 
 app.get('/', function(req, res) {
   res.send('App is running');

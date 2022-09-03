@@ -8,7 +8,8 @@ app.get('/', function(req, res) {
 });
 
 
-app.use('/api/auth',)
+app.use('/api/auth',require('./routes/auth'));
+app.use('/api/notes',require('./routes/notes'));
 
 app.listen(3000, function() {
   console.log('Server listening on port 3000');

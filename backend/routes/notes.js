@@ -5,7 +5,7 @@ router.get('/',(req,res)=>{
     const obj = {
       title : "note 1",
     description : "this is the descrition of note 1",
-    time : Date.now
+    time : Date.now()
     }
 res.json(obj);
 })

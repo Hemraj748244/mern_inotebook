@@ -4,7 +4,7 @@ const app=express();
 connectToMongo();
 
 //to use json formats in API
-
+console.log("test github");
 
 app.get('/', function(req, res) {
   res.send('App is running');

@@ -3,6 +3,9 @@ const express = require('express');
 const app=express();
 connectToMongo();
 
+//to use json formats in API
+
+
 app.get('/', function(req, res) {
   res.send('App is running');
 });
